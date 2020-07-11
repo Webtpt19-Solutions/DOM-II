@@ -26,6 +26,10 @@ navItmes.forEach(item => {
         item.style.color = 'black'
         item.style.fontSize = '16px'
     })
+    item.addEventListener('click',(e)=>{
+        e.preventDefault();
+        e.stopPropagation();
+    })
 })
 
 const contentImgs = document.querySelectorAll('.img-content img');
